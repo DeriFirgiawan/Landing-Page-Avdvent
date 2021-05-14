@@ -4,7 +4,8 @@
   "description": "Web Landing Page that build with Tailwind CSS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css": "tailwind build src/css/style.css -o public/css/style.css",
+    "build-product:css": "NODE_ENV=production tailwind build src/css/style.css -o public/css/style.css"
   },
   "author": "Deri Firgiawan",
   "license": "ISC",
