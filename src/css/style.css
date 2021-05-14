@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
+html {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/* My Component */
+.base-title {
+  @apply text-black font-bold leading-10;
+}
+.btn-warning {
+  @apply py-3 px-10 rounded-lg text-white bg-warning-500 font-bold text-base focus:outline-none hover:bg-warning-600 focus:ring-yellow-300 focus:ring-4
+}
 @tailwind utilities;
+

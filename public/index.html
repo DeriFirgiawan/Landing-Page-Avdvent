@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <title>Landing Page Avdvent</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="xs:mx-7 md:mx-7 xs:py-5 md:py-5 mx-40 py-8 flex justify-between flex-wrap items-center">
+        <a href="#">
+          <img class="xs:w-24 md:w-36" src="./assets/image/hero/logo.svg" alt="Avdvent">
+        </a>
+
+        <div class="-mr-2 hidden md:flex xs:flex">
+          <!-- Mobile menu button -->
+          <button type="button" class="text-gray-800 inline-flex items-center justify-center cursor-pointer p-2 rounded-md focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" onclick="openNav()">
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Heroicon name: outline/menu
+
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" id="toggleNavOpen">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <!--
+              Heroicon name: outline/x
+
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" id="toggleNavClosed">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex xs:hidden md:hidden">
+          <div class="border-r-2 flex xs:flex-col md:flex-col">
+            <a href="#" class="ml-9 hover:font-bold">Service</a>
+            <a href="#" class="ml-9 hover:font-bold">About Us</a>
+            <a href="#" class="px-9 hover:font-bold">Blog</a>
+          </div>
+          <a href="#" class="ml-9 font-semibold">Contact Us</a>
+        </div>
+      </div>
+      <div class="transition xs:flex md:flex xs:flex-col md:flex-col hidden xs:hidden md:hidden" id="navigationLink">
+        <a href="#" class="ml-9 xs:mt-9 md:mt-9 hover:font-bold">Service</a>
+        <a href="#" class="ml-9 xs:mt-9 md:mt-9 hover:font-bold">About Us</a>
+        <a href="#" class="ml-9 xs:mt-9 md:mt-9 hover:font-bold">Blog</a>
+        <a href="#" class="ml-9 xs:mt-9 md:mt-9 font-semibold hover:font-bold">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+  <main class="xs:mx-7 md:mx-7 md:pl-0 xs:pl-0 pl-40 overflow-hidden">
+    <section class="relative bottom-10 flex justify-between items-center xs:flex-col-reverse xs:justify-center xs:justify-evenly md:mt-10 xs:md-8">
+      <div>
+        <div class="w-96 h-auto xs:w-auto">
+          <h1 class="base-title text-5xl xs:text-4xl">Adventure is worthwhile in itself</h1>
+          <p class="text-xl mt-4">Explore and travel new places with advent and enjoy the best experience</p>
+        </div>
+        <div class="mt-12 xs:mt-8">
+          <button class="btn-warning text-2xl text-center">Get Started →</button>
+        </div>
+      </div>
+      <img class="w-3/5 ml-12 xs:ml-0 xs:w-auto md:ml-0" src="./assets/image/hero/hero1.svg" alt="Avdvent">
+    </section>
+    <!-- End Banner One -->
+
+    <!-- Banner Two -->
+    <section class="mt-16 flex xs:flex-col xs:justify-center justify-between items-center">
+      <img src="./assets/image/hero/Hero2.svg" alt="Hero2">
+      <div class="w-3/6 xs:w-full xs:mt-5 relative right-10 md:right-0">
+        <h1 class="base-title text-4xl">Life is either a daring adventure or nothing</h1>
+        <p class="text-xl mt-4">Life should not be a journey to the grave with the intention of arriving safely in a pretty and well preserved body, but rather to skid in broadside in a cloud of smoke, thoroughly used up, totally worn out, and loudly proclaiming ‘Wow! What a Ride!'</p>
+      </div>
+    </section>
+    <!-- End Banner Two -->
+
+    <!-- Experience -->
+    <section class="mt-36">
+      <h1 class="base-title text-4xl text-center">What you’ll experience with us!</h1>
+      <div class="mt-24 flex xs:flex-col md:justify-between justify-around md:flex-wrap xs:justify-center">
+        <div class="w-64 h-28">
+          <div class="inline-flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="24px" height="24px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><g fill="none"><path d="M10.469 9.609a.5.5 0 0 0 .143-.99c-1.076-.155-2.354.722-2.354 2.163a.5.5 0 0 0 1 0c0-.8.707-1.246 1.211-1.173z" fill="#626262"/><path d="M3.993 7.134c-2.417 1.908-2.48 5.142-1.347 7.32c.761 1.464 2.225 2.767 4.421 2.767c.545 0 .938-.015 1.248-.026c.937-.036 1.107-.042 2.412.48c1.736.694 3.582.488 5.124-.476c1.388-.868 2.185-2.882 2.05-4.517c-.081-.982-.008-1.366.086-1.862c.063-.33.135-.708.178-1.344c.107-1.595-.645-3.092-1.054-3.806c-.41-.714-1.1-1.83-2.724-2.855c-1.333-.842-3.858-1.245-5.856-.146c-1.464.805-2.196 1.537-3.074 3c-.333.555-.652.823-1.464 1.465zM14.9 10.465a4.495 4.495 0 1 1-8.99 0a4.495 4.495 0 0 1 8.99 0z" fill="#000000"/></g></svg>
+            <h4 class="font-bold text-2xl ml-6">Food is mood</h4>
+          </div>
+          <p class="text-lg font-normal">
+            One cannot think well, love well, sleep well, if one has not dined well
+          </p>
+        </div>
+
+        <div class="w-64 h-28 xs:mt-16">
+          <div class="inline-flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="24px" height="24px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M3 7c-1.11 0-2 .89-2 2v8h2a3 3 0 0 0 3 3a3 3 0 0 0 3-3h6a3 3 0 0 0 3 3a3 3 0 0 0 3-3h2v-4c0-1.11-.89-2-2-2l-3-4H3m0 1.5h4V11H3V8.5m6 0h4V11H9V8.5m6 0h2.5l1.96 2.5H15V8.5m-9 7A1.5 1.5 0 0 1 7.5 17A1.5 1.5 0 0 1 6 18.5A1.5 1.5 0 0 1 4.5 17A1.5 1.5 0 0 1 6 15.5m12 0a1.5 1.5 0 0 1 1.5 1.5a1.5 1.5 0 0 1-1.5 1.5a1.5 1.5 0 0 1-1.5-1.5a1.5 1.5 0 0 1 1.5-1.5z" fill="#000000"/></svg>
+            <h4 class="font-bold text-2xl ml-6">Motor vehicle</h4>
+          </div>
+          <p class="text-lg font-normal">
+            Road trips are the equivalent of Human Wings so we offer that via motor home
+          </p>
+        </div>
+
+        <div class="w-64 h-28 xs:mt-16 md:mt-16">
+          <div class="inline-flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="24px" height="24px" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1025"><path d="M960 1025H704q-27 0-45.5-19T640 961V705q0-27-19-45.5T576 641H448q-27 0-45.5 18.5T384 705v256q0 26-19 45t-45 19H63q-23 0-43-19.5T0 962q0-18 9-33l425-596L265 97q-14-23-7-48.5T288 10t48.5-6.5T375 33l137 191L648 32q13-22 39-29t48.5 6T765 47.5T759 96L590 333l425 597q9 16 9 31q0 24-19.5 44t-44.5 20z" fill="#000000"/></svg>
+            <h4 class="font-bold text-2xl ml-6">Night Camping</h4>
+          </div>
+          <p class="text-lg font-normal">
+            The darker the night, the brighter the stars and this experience is breathtaking Camping experience
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Script -->
+  <script src="../src/index.js"></script>
+</body>
+</html>
